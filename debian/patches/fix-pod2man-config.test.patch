@@ -1,0 +1,33 @@
+Description: fix config.test, pod2man _can_ format manpages
+Author: Dmitrijs Ledkovs <xnox@ubuntu.com>
+
+--- a/helpers/basic_auth/DB/config.test
++++ b/helpers/basic_auth/DB/config.test
+@@ -2,6 +2,6 @@
+ 
+ ## Test: do we have perl to build the helper scripts?
+ ## Test: do we have pod2man to build the manual?
+-perl --version >/dev/null && echo | pod2man >/dev/null
++perl --version >/dev/null && echo "=head1 NAME" | pod2man >/dev/null
+ 
+ exit $?
+--- a/helpers/external_acl/SQL_session/config.test
++++ b/helpers/external_acl/SQL_session/config.test
+@@ -2,6 +2,6 @@
+ 
+ ## Test: do we have perl to build the helper scripts?
+ ## Test: do we have pod2man to build the manual?
+-perl --version >/dev/null && echo | pod2man >/dev/null
++perl --version >/dev/null && echo "=head1 NAME" | pod2man >/dev/null
+ 
+ exit $?
+--- a/helpers/log_daemon/DB/config.test
++++ b/helpers/log_daemon/DB/config.test
+@@ -2,6 +2,6 @@
+ 
+ ## Test: do we have perl to build the helper scripts?
+ ## Test: do we have pod2man to build the manual?
+-perl --version >/dev/null && echo | pod2man >/dev/null
++perl --version >/dev/null && echo "=head1 NAME" | pod2man >/dev/null
+ 
+ exit $?
