@@ -1,3 +1,9 @@
+squid3 (3.4.8-1) utopic; urgency=low
+
+  * Bump to upstream version 3.4.8
+
+ -- Alan Grosskurth <code@alan.grosskurth.ca>  Fri, 17 Oct 2014 05:51:03 +0000
+
 squid3 (3.3.8-1ubuntu8) utopic; urgency=medium
 
   * SECURITY UPDATE: Ignore Range headers with unidentifiable byte-range
